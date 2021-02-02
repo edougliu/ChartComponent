@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.emma.chartcomponent.persistence">
+	<class name="LabResult" table="LAB_TEST_RESULT">
+		<id name="resultId" column="LAB_TEST_RESULT_ID"/>
+		<property name="labTestId" column="LAB_TEST_ID"/>
+		<property name="result" column="RESULT"/>
+		<property name="recordedDateTime" column="RECORDED_DATE_TIME"/>
+		<property name="recordedById" column="RECORDED_BY_ID"/>
+		<property name="patientId" column="PATIENT_ID"/>
+	</class>
+</hibernate-mapping>
+
+<!--todo change foreign key properties to relationships-->
